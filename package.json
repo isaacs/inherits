@@ -3,4 +3,5 @@
 , "version" : "1.0.0"
 , "keywords" : ["inheritance", "class", "klass", "oop", "object-oriented"]
 , "main" : "./inherits.js"
+, "repository" : "https://github.com/isaacs/inherits"
 , "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)" }
