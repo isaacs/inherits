@@ -4,5 +4,5 @@
 , "keywords" : ["inheritance", "class", "klass", "oop", "object-oriented"]
 , "main" : "./inherits.js"
 , "repository" : "https://github.com/isaacs/inherits"
-, "license": { "type": "GPOL", "url": "https://raw.github.com/isaacs/inherits/master/LICENSE" }
+, "license": { "type": "WTFPL2" }
 , "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)" }
