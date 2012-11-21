@@ -1,6 +1,13 @@
 module.exports = inherits
 
 function inherits (c, p, proto) {
+  if (typeof p != 'function') {
+    proto = p, p = c, c =
+      proto && typeof proto.constructor == 'function' &&
+      proto.constructor !== Object.prototype.constructor
+        ? proto.constructor
+        : function() { p.apply(this, arguments) }
+  }
   proto = proto || {}
   var e = {}
   ;[c.prototype, proto].forEach(function (s) {
