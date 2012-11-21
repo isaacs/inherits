@@ -17,6 +17,7 @@ function inherits (c, p, proto) {
   })
   c.prototype = Object.create(p.prototype, e)
   c.super = p
+  return c
 }
 
 //function Child () {
