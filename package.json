@@ -15,9 +15,12 @@
   "main": "./inherits.js",
   "browser": "./inherits_browser.js",
   "repository": "https://github.com/isaacs/inherits",
-  "license": {
-    "type": "WTFPL2"
-  },
+  "licenses": [
+    {
+      "type": "WTFPL2",
+      "url": "https://raw.github.com/isaacs/inherits/master/LICENSE"
+    }
+  ],  
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
   "scripts": {
     "test": "node test"
