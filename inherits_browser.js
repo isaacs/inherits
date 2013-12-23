@@ -15,7 +15,11 @@ if (typeof Object.create === 'function') {
   // old school shim for old browsers
   module.exports = function inherits(ctor, superCtor) {
     ctor.super_ = superCtor
-    var TempCtor = function () {}
+    var TempCtor = function () {
+      // otherwise the super constructor 
+      // is never called apparently
+      ctor.super_.apply(this, arguments)
+    }
     TempCtor.prototype = superCtor.prototype
     ctor.prototype = new TempCtor()
     ctor.prototype.constructor = ctor
