@@ -25,7 +25,12 @@ not only in node.js but in browser too.
 
 ```js
 var inherits = require('inherits');
-// then use exactly as the standard one
+var EventEmitter = require('events').EventEmitter;
+
+function MyClass() {}
+
+// MyClass now has EventEmitter methods.
+inherits(MyClass, EventEmitter);
 ```
 
 ## note on version ~1.0
