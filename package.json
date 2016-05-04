@@ -18,5 +18,9 @@
   "license": "ISC",
   "scripts": {
     "test": "node test"
-  }
+  },
+  "files": [
+    "inherits.js",
+    "inherits_browser.js"
+  ]
 }
