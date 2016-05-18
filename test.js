@@ -1,13 +1,13 @@
 var inherits = require('./inherits.js')
-var assert = require('assert')
+var t = require('tap')
 
 function test(c) {
-  assert(c.constructor === Child)
-  assert(c.constructor.super_ === Parent)
-  assert(Object.getPrototypeOf(c) === Child.prototype)
-  assert(Object.getPrototypeOf(Object.getPrototypeOf(c)) === Parent.prototype)
-  assert(c instanceof Child)
-  assert(c instanceof Parent)
+  t.equal(c.constructor, Child)
+  t.equal(c.constructor.super_, Parent)
+  t.equal(Object.getPrototypeOf(c), Child.prototype)
+  t.equal(Object.getPrototypeOf(Object.getPrototypeOf(c)), Parent.prototype)
+  t.isa(c, Child)
+  t.isa(c, Parent)
 }
 
 function Child() {
@@ -21,5 +21,3 @@ inherits(Child, Parent)
 
 var c = new Child
 test(c)
-
-console.log('ok')

@@ -18,5 +18,8 @@
   "license": "ISC",
   "scripts": {
     "test": "node test"
+  },
+  "devDependencies": {
+    "tap": "^5.7.1"
   }
 }
