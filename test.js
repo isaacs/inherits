@@ -21,3 +21,5 @@ inherits(Child, Parent)
 
 var c = new Child
 test(c)
+
+t.isa(inherits, 'function')
