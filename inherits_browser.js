@@ -1,3 +1,5 @@
+(function (module) { 'use strict';
+
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -21,3 +23,8 @@ if (typeof Object.create === 'function') {
     ctor.prototype.constructor = ctor
   }
 }
+
+  if (('function' === typeof define) && define.amd) {
+    define(Object.bind(null, module.exports));
+  }
+}('undefined' === typeof module ? {} : module));
