@@ -14,8 +14,16 @@
   ],
   "main": "./inherits.js",
   "browser": "./inherits_browser.js",
-  "repository": "git://github.com/isaacs/inherits",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacs/inherits.git"
+  },
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacs/inherits/issues"
+  },
+  "homepage": "https://github.com/isaacs/inherits#readme",
   "scripts": {
     "test": "node test"
   },
