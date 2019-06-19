@@ -1,4 +1,4 @@
-var inherits = require('./inherits.js')
+var inherits = require('../inherits_browser.js')
 var t = require('tap')
 
 function test(c) {
@@ -23,3 +23,6 @@ var c = new Child
 test(c)
 
 t.isa(inherits, 'function')
+
+function Orphan() {}
+inherits(Orphan, null)

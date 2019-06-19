@@ -17,10 +17,10 @@
   "repository": "git://github.com/isaacs/inherits",
   "license": "ISC",
   "scripts": {
-    "test": "node test"
+    "test": "tap"
   },
   "devDependencies": {
-    "tap": "^7.1.0"
+    "tap": "^14.2.4"
   },
   "files": [
     "inherits.js",
