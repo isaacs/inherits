@@ -4,9 +4,9 @@ Browser-friendly inheritance fully compatible with standard node.js
 This package exports standard `inherits` from node.js `util` module in
 node environment, but also provides alternative browser-friendly
 implementation through [browser
-field](https://gist.github.com/shtylman/4339901). Alternative
-implementation is a literal copy of standard one located in standalone
-module to avoid requiring of `util`. It also has a shim for old
+field](https://github.com/defunctzombie/package-browser-field-spec).
+Alternative implementation is a literal copy of standard one located in
+standalone module to avoid requiring of `util`. It also has a shim for old
 browsers with no `Object.create` support.
 
 While keeping you sure you are using standard `inherits`
