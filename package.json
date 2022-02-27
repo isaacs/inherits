@@ -20,7 +20,7 @@
     "test": "tap"
   },
   "devDependencies": {
-    "tap": "^14.2.4"
+    "tap": "^15.1.6"
   },
   "files": [
     "inherits.js",

@@ -6,8 +6,8 @@ function test(c) {
   t.equal(c.constructor.super_, Parent)
   t.equal(Object.getPrototypeOf(c), Child.prototype)
   t.equal(Object.getPrototypeOf(Object.getPrototypeOf(c)), Parent.prototype)
-  t.isa(c, Child)
-  t.isa(c, Parent)
+  t.type(c, Child)
+  t.type(c, Parent)
 }
 
 function Child() {
@@ -22,4 +22,4 @@ inherits(Child, Parent)
 var c = new Child
 test(c)
 
-t.isa(inherits, 'function')
+t.type(inherits, 'function')
