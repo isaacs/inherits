@@ -1,5 +1,5 @@
 Browser-friendly inheritance fully compatible with standard node.js
-[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).
+[inherits](https://nodejs.org/api/util.html#utilinheritsconstructor-superconstructor).
 
 This package exports standard `inherits` from node.js `util` module in
 node environment, but also provides alternative browser-friendly
