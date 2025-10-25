@@ -19,7 +19,7 @@
     "url": "git+https://github.com/isaacs/inherits.git"
   },
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
-  "license": "ISC",
+  "license": "BlueOak-1.0.0",
   "bugs": {
     "url": "https://github.com/isaacs/inherits/issues"
   },
