@@ -16,6 +16,16 @@ jobs:
           shell: bash
         - os: windows-latest
           shell: powershell
+        # macos-latest is arm64, which has no Node 12/14 builds
+        exclude:
+        - node-version: 12.x
+          platform:
+            os: macos-latest
+            shell: bash
+        - node-version: 14.x
+          platform:
+            os: macos-latest
+            shell: bash
       fail-fast: false
 
     runs-on: ${{ matrix.platform.os }}
